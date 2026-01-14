@@ -26,7 +26,7 @@ export default function Contact() {
         </div>
 
         <p className="mono" style={{ marginTop: 16, opacity: 0.9 }}>
-          Available for Remote System Administrator roles • GMT+8
+          Available for Remote System Administrator, IT Engineer, IT Specialist, Cybersecurity Analyst roles • GMT+8
         </p>
       </section>
     </main>
