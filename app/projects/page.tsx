@@ -12,10 +12,6 @@ export default function Projects() {
           <span style={{ color: "var(--accent)" }}>$</span> projects
         </h2>
 
-        <p style={{ color: "var(--muted)", marginTop: 6 }}>
-          Click a project to view an incident-style writeup (situation → impact → actions → result).
-        </p>
-
         <div style={{ display: "grid", gap: 14, marginTop: 14 }}>
           {projects.map((p) => (
             <Link key={p.slug} href={`/projects/${p.slug}`} style={{ textDecoration: "none" }}>
