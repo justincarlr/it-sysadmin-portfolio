@@ -39,31 +39,23 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="mono"
+      aria-label="Toggle theme"
+      title="Toggle light / dark"
       style={{
-        display: "inline-flex",
-        alignItems: "center",
-        gap: 10,
-        padding: "10px 14px",
-        borderRadius: 999,
+        width: 40,
+        height: 40,
+        borderRadius: "50%",
         background: "var(--card)",
         border: "1px solid var(--border)",
-        color: "var(--text)",
+        color: "var(--accent)",
         cursor: "pointer",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: 18,
       }}
-      aria-label="Toggle theme"
-      title="Toggle light/dark"
     >
-      <span
-        style={{
-          width: 10,
-          height: 10,
-          borderRadius: "50%",
-          background: "var(--accent)",
-          display: "inline-block",
-        }}
-      />
-      {theme === "dark" ? "dark ops" : "enterprise light"}
+      {theme === "dark" ? "☀️" : "🌙"}
     </button>
   );
 }
